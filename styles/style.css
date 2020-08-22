@@ -1,0 +1,122 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #f6f6f6;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #0b0080;
+    display: inline-block;
+}
+.l-flex {
+    display: flex;
+}
+
+/* -----sidebar----- */
+.l-sidebar {
+    padding: 20px;
+}
+.wiki-logo {
+    width: 160px;
+    height: 160px;
+}
+.top-logo {
+    width: 110px;
+    display: block;
+    margin: 0 auto;
+}
+.wiki-logo h2 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 0;
+    text-align: center;
+}
+.top-logo-title-middle {
+    font-size: .7em;
+}
+.wiki-logo p {
+    margin-top: -5px;
+    text-align: center;
+    font-size: .8em;
+}
+.sidebar-menu {
+    margin-left: 10px;
+}
+.sidebar-menu p:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ffffff;
+    background: linear-gradient(90deg, #ffffff 0%, #808080 50%, #ffffff 100%);
+}
+.sidebar-menu a {
+    font-size: .9em;
+    margin-bottom: 2px;
+}
+
+/* -----main header----- */
+.l-header {
+    height: 20px;
+}
+.vector-menu {
+    text-align: right;
+}
+.vector-menu ul {
+    /* display: flex; */
+    margin: 0;
+}
+.vector-menu li {
+    display: inline-block;
+    /* justify-content: space-around; */
+    /* justify-content: flex-end; */
+    padding: 6px 0 0;
+    text-align: center;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 20px;
+    vertical-align: bottom;
+    display: inline-flex;
+    color: #464646;
+  }
+
+/* -----main content----- */
+.main-menu {
+    justify-content: space-between;
+}
+.main-menu-left ul {
+    display: flex;
+}
+.main-menu-right ul {
+    display: flex;
+}
+.main-menu-right {
+    display: flex;
+}
+#search-box {
+    padding: 0px 24px 0px 3px;
+}
+.main-content {
+    background-color: #ffffff;
+    border: 1px solid #a7d7f9;
+    padding: 20px 24px 24px;
+}
+
+/* -----homer info----- */
+.homer-info {
+    float: right;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+}
+.text-simpson {
+    background-color: #FADA00;
+    text-align: center;
+    font-weight: bold;
+}
