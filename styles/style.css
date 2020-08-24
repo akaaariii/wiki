@@ -8,6 +8,7 @@ body {
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -63,33 +64,30 @@ a {
 
 /* -----main header----- */
 .l-header {
-    height: 20px;
+    height: 50px;
 }
 .vector-menu {
     text-align: right;
 }
-.vector-menu ul {
-    /* display: flex; */
-    margin: 0;
-}
 .vector-menu li {
     display: inline-block;
-    /* justify-content: space-around; */
-    /* justify-content: flex-end; */
     padding: 6px 0 0;
     text-align: center;
+    margin-right: 8px;
+    font-size: .9em;
 }
 .material-icons {
     font-family: 'Material Icons';
-    font-size: 20px;
+    font-size: 23px;
     vertical-align: bottom;
     display: inline-flex;
-    color: #464646;
+    color: #646262;
   }
 
-/* -----main content----- */
+/* -----main content (menu bar)----- */
 .main-menu {
     justify-content: space-between;
+    height: 30px;
 }
 .main-menu-left ul {
     display: flex;
@@ -100,23 +98,77 @@ a {
 .main-menu-right {
     display: flex;
 }
-#search-box {
-    padding: 0px 24px 0px 3px;
+.main-menu-left ul li {
+    line-height: 30px;
 }
+.main-menu-right ul li {
+    line-height: 30px;
+}
+.main-menu a {
+    margin: 0 10px;  
+}
+.main-menu li {
+    background: rgb(255,255,255);
+    background: linear-gradient( #f6f6f6 0%, #cbe5f878 100%);
+}
+#search-input {
+    width: 250px;
+    padding: 3px;
+}
+
+/* -----main content----- */
 .main-content {
     background-color: #ffffff;
     border: 1px solid #a7d7f9;
     padding: 20px 24px 24px;
 }
+.main-content h1 {
+    margin: 0;
+}
 
 /* -----homer info----- */
 .homer-info {
+    margin-left: 20px;
+    width: 300px;
     float: right;
     border: 1px solid #a2a9b1;
     background-color: #f8f9fa;
 }
-.text-simpson {
-    background-color: #FADA00;
+.homer-info p, figcaption {
     text-align: center;
+}
+.text-simpson {
+    margin: 10px 5px;
+    padding: 3px;
+    background-color: #FADA00;
     font-weight: bold;
+}
+th, td {
+    text-align: left;
+    vertical-align: top;
+}
+.homer-desctiption  p {
+    line-height: 1.5;
+}
+
+/* -----contents navigation----- */
+.contents-nav {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    width: 300px;
+    margin: 0 0 20px 20px;
+}
+.contents-nav h2 {
+    text-align: center;
+    font-size: 1em;
+}
+.contents-nav ol {
+    counter-reset: item;
+}
+.contents-nav li {
+    display: block
+}
+.contents-nav li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
 }
